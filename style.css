@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background-color: rgba(10, 32, 128, 0.4);
+}
+
+header a img {
+    width: 400px;
+}
+
+.container1 {
+    height: auto;
+}
+
+nav {
+    width: 100%;
+    height: 6vh;
+    background-color: rgb(15, 9, 97);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li {
+    padding: 10px;
+    list-style-type: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: aliceblue;
+    display: block;
+    font-family: sans-serif;
+}
+
+nav ul li a:hover {
+    color: yellow;
+    transition: 0.2s ease-out;
+    border-bottom: 2px solid white;
+}
+
+.intropic {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.full-body {
+    background-image: url(images/Header\ Intro.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.intropic p {
+    color: white;
+    font-family: sans-serif;
+    font-size: 100px;
+    font-weight: 600;
+}
+
+.village-container {
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient(130deg, rgb(100, 0, 78), darkblue, purple);
+}
+
+.grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2em;
+    padding: 2em;
+}
+
+.grid-items {
+    background-color: azure;
+    overflow: hidden;
+    border-radius: 4px;
+    transition: 0.2s;
+}
+
+.card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.card .card-content {
+    padding: 15px;
+}
+
+.card .card-content h2 {
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.card .card-content p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: rgba(0, 0, 0, 0.71);
+}
+
+.card .card-content button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    background-color: lightskyblue;
+    color: black;
+}
+
+.card .card-content button:hover {
+    background-color: darkblue;
+    color: white;
+    transition: 0.2s;
+}
+
+.grid-items:hover {
+    box-shadow: 0 4px 17px white;
+    transform: translatey(-1%);
+}
+
+.services-menu {
+    height: 30vh;
+    background-color: rgb(233, 221, 221);
+}
+
+.service-box {
+    display: flex;
+    justify-content: space-between;
+    padding: 2vh 0vh;
+}
